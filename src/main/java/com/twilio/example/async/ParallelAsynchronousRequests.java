@@ -1,5 +1,6 @@
 package com.twilio.example.async;
 
+import com.twilio.Twilio;
 import com.twilio.rest.api.v2010.account.Message;
 import com.twilio.type.PhoneNumber;
 
@@ -11,6 +12,10 @@ import static com.twilio.example.async.Secrets.*;
 public class ParallelAsynchronousRequests {
 
     public static void main(String[] args) {
+
+        Twilio.init(
+            System.getenv("TWILIO_ACCOUNT_SID"),
+            System.getenv("TWILIO_AUTH_TOKEN"));
 
         // makeApiRequestThenStoreResult contains the same code as the previous example
         CompletableFuture<String> result1 = makeApiRequestThenStoreResult(CUSTOMER_1);
