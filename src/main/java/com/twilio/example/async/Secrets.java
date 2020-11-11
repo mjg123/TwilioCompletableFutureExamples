@@ -1,4 +1,4 @@
-package com.twilio.api.async;
+package com.twilio.example.async;
 
 import com.twilio.type.PhoneNumber;
 

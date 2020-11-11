@@ -1,4 +1,4 @@
-package com.twilio.api.async;
+package com.twilio.example.async;
 
 import com.twilio.rest.api.v2010.account.Message;
 import com.twilio.type.PhoneNumber;
@@ -6,7 +6,7 @@ import com.twilio.type.PhoneNumber;
 import java.time.ZonedDateTime;
 import java.util.concurrent.CompletableFuture;
 
-import static com.twilio.api.async.Secrets.*;
+import static com.twilio.example.async.Secrets.*;
 
 public class ParallelAsynchronousRequests {
 
